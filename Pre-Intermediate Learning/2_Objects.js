@@ -18,7 +18,9 @@ const obj =
     {
         workphone: 0o0,
         homephone: 0o0
-    }
+    },
+
+    owner: "Amol Satsangi"
 
 }
 
@@ -37,6 +39,13 @@ console.log(Object.entries(obj));
 console.log(Object.values(obj));
 
 console.log(obj.hasOwnProperty('name'));
+
+//Object Destructuring
+
+const {owner: o} = obj;
+
+console.log(o);
+
 
 
 
