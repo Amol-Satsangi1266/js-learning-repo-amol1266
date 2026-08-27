@@ -22,7 +22,22 @@ const obj =
 
 }
 
-console.log(obj.name.firstName);
-console.log(obj.email.workMail);
-console.log(obj.phone.workphone);
-console.log(obj.name.lastName);
+// console.log(obj.name.firstName);
+// console.log(obj.email.workMail);
+// console.log(obj.phone.workphone);
+// console.log(obj.name.lastName);
+
+
+// Some more
+
+console.log(Object.keys(obj));
+
+console.log(Object.entries(obj));
+
+console.log(Object.values(obj));
+
+console.log(obj.hasOwnProperty('name'));
+
+
+
+
