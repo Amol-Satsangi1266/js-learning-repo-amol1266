@@ -24,10 +24,10 @@ const obj =
 
 }
 
-// console.log(obj.name.firstName);
-// console.log(obj.email.workMail);
-// console.log(obj.phone.workphone);
-// console.log(obj.name.lastName);
+console.log(obj.name.firstName);
+console.log(obj.email.workMail);
+console.log(obj.phone.workphone);
+console.log(obj.name.lastName);
 
 
 // Some more
@@ -45,6 +45,13 @@ console.log(obj.hasOwnProperty('name'));
 const {owner: o} = obj;
 
 console.log(o);
+
+let obj1 = 
+{
+    name: "Hello",
+    age: 0o0,
+    email: "NaN"
+}
 
 
 
