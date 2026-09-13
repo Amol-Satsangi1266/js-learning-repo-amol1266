@@ -1,5 +1,2 @@
-let stringno = "";
-
-let boolno = Boolean(stringno);
-
-console.log(boolno);
+let avar = 10;
+console.log("Basic Printing: " + avar);
