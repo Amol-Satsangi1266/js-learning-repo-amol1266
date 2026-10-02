@@ -26,5 +26,11 @@
 
     document.getElementById('google').addEventListener('click',(e)=>{e.preventDefault();
     alert("Google clicked")},false)
+
+    document.querySelector(".image-gallary").addEventListener('click',(e)=>
+    {
+      let removeit = e.target.parentNode;
+      removeit.remove();
+    })
 </script>
 </html>
