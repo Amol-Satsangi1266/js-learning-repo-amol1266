@@ -1,13 +1,13 @@
-// const promise = new Promise(function(resolve,reject){
-//     setTimeout(function(){
-//         console.log("Check Function")
-//         resolve({username:"Amol",email: "amolpankaj14@gmail.com"})
-//     },1000)
-// });
+const promise = new Promise(function(resolve,reject){
+    setTimeout(function(){
+        console.log("Check Function")
+        resolve({username:"Amol",email: "amolpankaj14@gmail.com"})
+    },1000)
+});
 
-// promise.then(function(user){
-//     console.log(user);
-// })
+promise.then(function(user){
+    console.log(user);
+})
 
 // handling both resolve and reject boys
 
@@ -38,3 +38,34 @@ promise4
 .catch(function(error){
     console.log(error);
 })
+
+//Async and Await
+
+const promise5 = new Promise(function(resolve, reject){
+    setTimeout(function(){
+        console.log("Again Check 1")
+        let error = false;
+        if(!error)
+        {
+        resolve({username:"Vijay",email:"vijaysir@gmail.com"})
+        }
+        else
+        {
+            reject('NOT ACCEPTABLE')
+        }
+        
+    }, 1000)
+})
+
+async function consumepromise5(){
+    try{
+        const response = await promise5
+        console.log(response)
+    }
+    catch(error)
+    {
+        console.log(error)
+    }
+}
+consumepromise5()
+
