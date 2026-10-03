@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello Everyone Welcome to the Sessions</h1>
+
+    <button id="Start">Start</button>
+    <button id="Stop">Stop</button>
+</body>
+<script>
+    const sayDate = (str)=>{
+        console.log(str,Date.now())
+    }
+
+    document.querySelector("#Start").addEventListener('click',()=>{hakuna =  setInterval(sayDate, 1500, "Hi"); })
+    document.querySelector("#Stop").addEventListener('click',()=>{ clearInterval(hakuna)})
+    
+</script>
+</html>
