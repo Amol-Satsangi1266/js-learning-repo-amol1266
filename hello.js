@@ -58,3 +58,32 @@ const [firstItem, secondItem] = arrVar;
 const combinedArray = [...arrVar, 4, 5];
 const extendedObj = { ...user, location: "Earth" };
 
+const numbers;
+const doubled = numbers.map(num => num * 2);
+const evens = numbers.filter(num => num % 2 === 0);
+const total = numbers.reduce((acc, curr) => acc + curr, 0);
+
+numbers.forEach(num => console.log(num));
+
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+  sayHi() {
+    console.log(`Hi, I am ${this.name}`);
+  }
+}
+const personInstance = new Person("Charlie");
+personInstance.sayHi();
+
+const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
+async function fetchAndLog() {
+  try {
+    await delay(1000);
+    console.log("Async operation complete");
+  } catch (error) {
+    console.error(error);
+  }
+}
+fetchAndLog();
