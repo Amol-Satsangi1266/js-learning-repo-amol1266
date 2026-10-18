@@ -58,7 +58,7 @@ const [firstItem, secondItem] = arrVar;
 const combinedArray = [...arrVar, 4, 5];
 const extendedObj = { ...user, location: "Earth" };
 
-const numbers;
+const numbers=0;
 const doubled = numbers.map(num => num * 2);
 const evens = numbers.filter(num => num % 2 === 0);
 const total = numbers.reduce((acc, curr) => acc + curr, 0);
