@@ -13,6 +13,7 @@ title.style.fontSize = "30px";
 
 
 //Creating Elements
+//dom intro
 const p = document.createElement("p");
 
 p.textContent = "New paragraph";
