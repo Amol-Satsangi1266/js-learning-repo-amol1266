@@ -26,9 +26,6 @@ const heroes = [...marvel,...dc];
 
 console.log(heroes);
 
-
-//Flatnening
-
 const real_arr = [1,2,3,4,[5,6],7,[8,[9,10,[11,12]]]];
 
 const main_arr = real_arr.flat(Infinity);
